@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>DevOps Dashboard</title>
+</head>
+<body>
+    <h1>Pipeline Metrics</h1>
+    <div>
+        <p>Success Rate: {{ metrics.success_rate }}%</p>
+        <p>Average Duration: {{ metrics.average_duration }} seconds</p>
+        <p>Failed Runs: {{ metrics.failed_runs }}</p>
+    </div>
+</body>
+</html>
